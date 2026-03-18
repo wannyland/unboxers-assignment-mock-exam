@@ -1,0 +1,32 @@
+@import "tailwindcss";
+
+@theme {
+  --font-sans: 'Pretendard Variable', 'Pretendard', -apple-system, system-ui, sans-serif;
+
+  /* ── 배경 ─────────────────────────────────────────────────────── */
+  --color-app-bg:  #F5F5F5;
+  --color-omr-bg:  #FFFDF1;
+
+  /* ── OMR 테마 색상 ─────────────────────────────────────────────── */
+  --color-omr-primary:      #5784F1;   /* border, header text */
+  --color-omr-primary-20:   rgba(87,132,241,0.20);  /* num bg */
+  --color-omr-num-text:     #364F8E;   /* num column text */
+  --color-omr-text:         #364F8E;   /* general OMR text */
+  --color-omr-placeholder:  #B0C0E8;   /* SA placeholder */
+
+  /* ── 버블 ─────────────────────────────────────────────────────── */
+  --color-omr-bubble:       #AAAAAA;
+  --color-omr-bubble-text:  #FFFFFF;
+
+  /* ── 고정 터치 크기 ────────────────────────────────────────────── */
+  --btn-tutorial-w: 243px;
+  --btn-tutorial-h: 52px;
+  --btn-exit-w:     120px;
+  --btn-exit-h:     44px;
+}
+
+/* ── Reset ─────────────────────────────────────────────────────────── */
+*, *::before, *::after { box-sizing: border-box; }
+* { -webkit-font-smoothing: antialiased; -moz-osx-font-smoothing: grayscale; }
+html, body, #root { height: 100%; touch-action: manipulation; }
+body { background: var(--color-app-bg); font-family: var(--font-sans); }
