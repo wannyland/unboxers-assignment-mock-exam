@@ -178,9 +178,16 @@ pnpm dev
 
 이 저장소를 포크한 뒤, 아래에 웹앱 실행 방법도 함께 작성해 주세요.
 
-예시 형식:
+## 이슈 사항
+- API 에서 각 객관식, 주관식의 문항 수가 없어, /api/exams - responseData.data.totalQuestions 를 객관식 문항 수 (25) 로 맞췄습니다.
+- 주관식 문항 수는 피그마 기준으로 맞춰놨습니다.
+- /api/exams/submit - request.answers[].answer 은 서버에서 number 로만 받고 있는 걸 확인했습니다. 복수정답은 어떻게 할지 몰라, 프론트엔드에 기능 구현만 해놓았습니다.
 
-- `## Web App Run`
-- `pnpm install`
-- `pnpm dev`
-- 웹앱 실행 주소 기재
+## 과제 제출
+- 구글 드라이브 공유드립니다.
+- https://drive.google.com/file/d/1Q-BgqS6mNjLXclr0GVezmcJnYmTIwVTR/view?usp=sharing
+  
+## Web App Run
+- pnpm install
+- pnpm dev
+- http://localhost:5173
