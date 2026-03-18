@@ -140,7 +140,7 @@ function OmrCardRoot({
         result.push({
           answerType: "subjective",
           number: Number(q),
-          answer: val.trim(),
+          answer: Number(val),
         });
       }
     });

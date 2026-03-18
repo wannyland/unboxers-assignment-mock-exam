@@ -67,7 +67,8 @@ export function ResultView({
                     className="font-black tabular-nums leading-none"
                     style={{ fontSize: 72 }}
                   >
-                    {score * 4} // 25문제 100점 만점
+                    {score * 4}
+                    {/* // 25문제 100점 만점 */}
                   </span>
                   <span className="text-gray-400 font-semibold text-xl mb-2">
                     점
